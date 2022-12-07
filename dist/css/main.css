@@ -42,7 +42,11 @@ header {
 .btn-light {
   background: #f4f4f4;
   color: #000; }
+  .btn-light:hover {
+    background-color: #dbdbdb; }
 
 .btn-dark {
   background: #333;
   color: #fff; }
+  .btn-dark:hover {
+    background-color: #4d4d4d; }

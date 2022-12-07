@@ -58,16 +58,23 @@ header {
 
     &:hover {
       @include transform(scale(.95));
+      
     }
   }
 
   &-light {
     background: $light-color;
     color: set-text-color($light-color);
+      &:hover {
+        background-color: darken($light-color , 10%);
+    }
   }
 
   &-dark {
     background: $dark-color;
     color: set-text-color($dark-color);
+    &:hover {
+      background-color: lighten($dark-color , 10%);
+  }
   }
 }
