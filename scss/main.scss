@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'functions';
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@ body {
 
 header {
   background: $dark-color;
-  color: $light-color;
+  color: set-text-color($dark-color);
   padding: 1rem;
 
     h1 {
@@ -31,12 +33,12 @@ header {
 
   &-a {
     background: $primary-color;
-    color: white;
+    color: set-text-color($primary-color);
   }
 
   &-b {
     background: $secondary-color;
-    color: white;
+    color: set-text-color($secondary-color);
   }
 }
 
@@ -57,11 +59,11 @@ header {
 
   &-light {
     background: $light-color;
-    color: #333;
+    color: set-text-color($light-color);
   }
 
   &-dark {
     background: $dark-color;
-    color: #fff;
+    color: set-text-color($dark-color);
   }
 }
