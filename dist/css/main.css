@@ -34,6 +34,11 @@ header {
   text-decoration: none;
   margin-top: 1rem; }
 
+.btn-light:hover, .btn-dark:hover {
+  --webkit-transform: $property;
+  -ms-transform: scale(0.95);
+  transform: scale(0.95); }
+
 .btn-light {
   background: #f4f4f4;
   color: #000; }

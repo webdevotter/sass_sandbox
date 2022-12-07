@@ -55,6 +55,10 @@ header {
   &-light,
   &-dark {
     @extend %btn-shared;
+
+    &:hover {
+      @include transform(scale(.95));
+    }
   }
 
   &-light {
